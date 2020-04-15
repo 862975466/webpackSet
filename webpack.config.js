@@ -18,23 +18,24 @@ module.exports = {
   /*output: {    filename:'[name].js',
   //name相当于变量，等同于pageOne/pageTwo/pageThree    path:path.resolve(__dirname,'build'),//}
   */
-  plugins: [new HtmlwebpackPlugin({
-    title: 'reactwebpack'
-    /* 全部都是可选项
-      title:"reactwebpack",
-      配置html 的title    filename: ,
-      html文件的名字，默认是index    template:'',
-      模板文件路径    inject:true|'body'|'head'|'false',
-      设置为 true|'body':js文件引入的位置为body的结束标签之前    favicon:'',
-      设置html的icon图标    minify:{}|false,
-      暂时不理解这个参数的使用    hash:true|false,
-      将添加唯一的webpack编译hash到所有包含的脚本和css文件    cache:true|false,
-      默认为true，仅仅在文件修改之后才会发布    showErrors:true|false,
-      默认为true，错误信息写入HTML页面中
-      chunks: 允许添加某些块（比如unit test）
-      chunksSortMode: 允许控制块在添加到页面之前的排序方式
-      excludeChunks: 允许跳过模型块，比如单元测试块
-   */
+  plugins: [
+    new HtmlwebpackPlugin({
+      title: 'reactwebpack'
+      /* 全部都是可选项
+        title:"reactwebpack",
+        配置html 的title    filename: ,
+        html文件的名字，默认是index    template:'',
+        模板文件路径    inject:true|'body'|'head'|'false',
+        设置为 true|'body':js文件引入的位置为body的结束标签之前    favicon:'',
+        设置html的icon图标    minify:{}|false,
+        暂时不理解这个参数的使用    hash:true|false,
+        将添加唯一的webpack编译hash到所有包含的脚本和css文件    cache:true|false,
+        默认为true，仅仅在文件修改之后才会发布    showErrors:true|false,
+        默认为true，错误信息写入HTML页面中
+        chunks: 允许添加某些块（比如unit test）
+        chunksSortMode: 允许控制块在添加到页面之前的排序方式
+        excludeChunks: 允许跳过模型块，比如单元测试块
+     */
   })
   ],
   devServer:{

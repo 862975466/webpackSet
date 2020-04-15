@@ -9,6 +9,7 @@ var server = new  webpackDevServer(webpack(config),{
   //compress:true,//gzip压缩
   //headers:{"X-Custom-Foo":"bar"},
   hot:true,//是否启用热更新
+  open:true,
   historyApiFallback:true,//html5接口,设置为true，所有路径均转到index.html
   inline:true,//是否实时刷新，即代码有更改，自动刷新浏览器
   stats:{colors:true},//显示bundle文件信息，不同类型的信息用不同的颜色显示
