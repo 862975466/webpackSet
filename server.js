@@ -1,6 +1,6 @@
 var webpack = require('webpack');//引入webpack模块
 var webpackDevServer = require('webpack-dev-server');//引入服务器模块
-console.log('webpackDevServer==',webpackDevServer);
+var path = require('path');
 var config = require('./webpack.config');//引入webpack配置文件
 var server = new  webpackDevServer(webpack(config),{
  // contentBase: path.join(__dirname,"dist"),//用于静态文件的目录，不设置默认为当前根目录
